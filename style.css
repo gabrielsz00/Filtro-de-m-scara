@@ -1,0 +1,35 @@
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+    border:2px dashed black;
+  }
+
+  #caracteris{
+    text-align: left;
+  }
+
+  #ocultar{
+    width: 150px;
+    height: 100px;
+    font-size: large;
+  }
+
+  .heading{
+    width: 100%;
+    text-align: center;
+}
+
+body{
+  background-size: cover;
+}
+
+h1{
+  color: white;
+}
+
+label{
+  color: white;
+  font-size: 26px;
+}

@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>Aplicativo de Filtro em Tempo Real usando a Rede Neural PoseNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body background="fundo.jpg">
+<center>
+  <div class="btn btn-info heading">
+    <h3>Filtro de máscara</h3>
+    
+  </div>
+
+  <button onclick="takeSnapshot()" class="btn btn-success">Tirar Foto</button>
+</center>
+<h1 id="show">Máscara selecionada: </h1>
+<br>
+<button onclick="ocultar()" class="btn btn-success" id="ocultar">Esconder</button>
+<br>
+<h1>Emojis:</h1>
+<button onclick="chorandoderir()" class="btn btn-success"><img src="https://i.postimg.cc/GhYT33xn/chorandoderir.png" alt="" width="100px" height="100px"></button>
+<button onclick="feliz()" class="btn btn-success"><img src="https://i.postimg.cc/5tB9Cjk8/feliz.png" alt="" width="100px" height="100px"></button>
+<button onclick="chorando()" class="btn btn-success"><img src="https://i.postimg.cc/cHDSR37t/chorando.png" alt="" width="100px" height="100px"></button>
+<button onclick="raiva()" class="btn btn-success"><img src="https://i.postimg.cc/Qdbh8vBq/raiva.png" alt="" width="100px" height="100px"></button>
+<h1>Personagens:</h1>
+<button onclick="mario()" class="btn btn-success"><img src="https://i.postimg.cc/QNbXr0CD/mario.png" alt="" width="100px" height="100px"></button>
+<button onclick="steve()" class="btn btn-success"><img src="https://i.postimg.cc/7Y1DNXvd/steve.png" alt="" width="100px" height="100px"></button>
+<button onclick="roblox()" class="btn btn-success"><img src="https://i.postimg.cc/kX8X3d2p/roblox.png" alt="" width="100px" height="100px"></button>
+
+<br><br><br>
+<br>
+<label for="">Posição X:</label>
+<input type="number" onchange="mudartamanho()" id="inputx" value="250">
+<br>
+<label for="">Posição Y:</label>
+<input type="number" onchange="mudartamanho()" id="inputy" value="302">
+<br>
+<label for="">Tamanho:</label>
+<input type="number" onchange="mudartamanho()" id="tamanho" value="430">
+<br>
+<button onclick="aplicar()" class="btn btn-success">Aplicar</button>
+<br>
+<button onclick="resetar()" class="btn btn-danger">Redefinir</button>
+
+
+
+<script src="main.js"></script>
+
+
+
+
+</body>
+
+</html>
